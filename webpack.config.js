@@ -1,11 +1,26 @@
 const path = require('path')
-const APP_DIR = path.resolve(__dirname, 'src')
+const SRC_DIR = path.resolve(__dirname, 'src')
 
 module.exports = {
   mode: 'production',
-  entry: `${APP_DIR}/scripts/common.js`,
+  entry: {
+    scripts: `${SRC_DIR}/scripts/index.ts`
+  },
+  devtool: 'inline-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
   output: {
     path: path.resolve(__dirname, 'assets'),
     filename: 'application.js'
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   }
 }
