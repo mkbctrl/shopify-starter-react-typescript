@@ -4,7 +4,7 @@ const SRC_DIR = path.resolve(__dirname, 'src')
 module.exports = {
   mode: 'production',
   entry: {
-    scripts: `${SRC_DIR}/scripts/index.ts`
+    scripts: `${SRC_DIR}/scripts/shared/index.ts`
   },
   devtool: 'inline-source-map',
   module: {
