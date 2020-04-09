@@ -1,3 +1,5 @@
+.DS_STORE
 yarn.lock
 node_modules
 assets
+todo.txt

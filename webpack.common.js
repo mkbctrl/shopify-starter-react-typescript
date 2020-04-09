@@ -2,15 +2,13 @@ const path = require('path')
 const SRC_DIR = path.resolve(__dirname, 'src')
 
 module.exports = {
-  mode: 'production',
   entry: {
     scripts: `${SRC_DIR}/scripts/shared/index.ts`
   },
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(ts|tsx)?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
@@ -18,7 +16,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'assets'),
-    filename: 'application.js'
+    filename: '[name].bundle.js'
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
