@@ -12,14 +12,12 @@
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
+    "webpack-merge": "^4.2.2",
     "webpack-cli": "^3.3.11",
     "@types/node": "^13.11.1",
     "@types/react": "^16.9.33",
-    "@types/react-dom": "^16.9.6"
-  },
-  "dependencies": {
+    "@types/react-dom": "^16.9.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "webpack-merge": "^4.2.2"
+    "react-dom": "^16.13.1"
   }
 }

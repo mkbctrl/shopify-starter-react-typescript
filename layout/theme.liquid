@@ -8,8 +8,9 @@
   <link rel="canonical" href="{{ canonical_url }}">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   {{ content_for_header }} <!-- Header hook for plugins -->
-  {{ 'application.scss.css' | asset_url | stylesheet_tag }}
-  {{ 'scripts.bundle.js' | asset_url | script_tag }}
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <script defer type="module" src="{{ "scripts.bundle.js" | asset_url }}"></script>
+  <script async type="module" src="{{ "cart-drawer.bundle.js" | asset_url }}"></script>
 </head>
 <body>
 
@@ -40,5 +41,10 @@
   <main role="main">
     {{ content_for_layout }}
   </main>
+
+  <div id="react-cart-drawer"></div>
+
+  <footer>
+  </footer>
 </body>
 </html>

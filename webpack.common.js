@@ -3,7 +3,8 @@ const SRC_DIR = path.resolve(__dirname, 'src')
 
 module.exports = {
   entry: {
-    scripts: `${SRC_DIR}/scripts/shared/index.ts`
+    scripts: `${SRC_DIR}/scripts/shared/index.ts`,
+    "cart-drawer": `${SRC_DIR}/scripts/shared/index-react-cart.ts`
   },
   module: {
     rules: [
