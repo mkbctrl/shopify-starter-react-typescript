@@ -1,5 +1,5 @@
 .DS_STORE
 yarn.lock
 node_modules
-assets
+assets/prod
 todo.txt

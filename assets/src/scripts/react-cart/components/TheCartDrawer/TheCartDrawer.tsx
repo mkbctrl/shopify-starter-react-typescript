@@ -5,7 +5,7 @@ function TheCartDrawer() {
     <div className="the-cart-drawer">
       Hello! I am test React component!
     </div>
-  );
+  )
 }
 
-export default TheCartDrawer;
+export default TheCartDrawer

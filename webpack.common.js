@@ -1,10 +1,15 @@
 const path = require('path')
-const SRC_DIR = path.resolve(__dirname, 'src')
+const DIR_SRC = path.resolve(__dirname, 'assets/src')
+const DIR_PROD = path.resolve(__dirname, 'assers/prod')
+const DIR_OUT = {
+  scripts: `${DIR_SRC}/scripts`,
+  styles: `${DIR_SRC}/styles`
+}
 
 module.exports = {
   entry: {
-    scripts: `${SRC_DIR}/scripts/shared/index.ts`,
-    "cart-drawer": `${SRC_DIR}/scripts/shared/index-react-cart.ts`
+    scripts: `${DIR_SRC}/scripts/utils/index.ts`,
+    "react-cart": `${DIR_SRC}/scripts/react-cart/index.ts`
   },
   module: {
     rules: [
@@ -16,7 +21,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'assets'),
+    path: path.resolve(__dirname, 'assets/prod'),
     filename: '[name].bundle.js'
   },
   resolve: {
