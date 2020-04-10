@@ -1,5 +1,7 @@
 .DS_STORE
 yarn.lock
 node_modules
-assets/prod
+assets/*.js
+assets/*.css
 todo.txt
+yarn-error.log
