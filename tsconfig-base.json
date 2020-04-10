@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDir": "./assets/src/scripts",
+    "outDir": "./assets/prod/scripts",
+    "target": "es5",
+    "module": "esnext",
+    "noEmitOnError": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}
