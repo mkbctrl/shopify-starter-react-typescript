@@ -5,3 +5,5 @@ assets/*.js
 assets/*.css
 todo.txt
 yarn-error.log
+config.yml
+.env
