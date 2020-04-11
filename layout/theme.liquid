@@ -10,6 +10,7 @@
   {{ content_for_header }} <!-- Header hook for plugins -->
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   <script defer type="module" src="{{ "scripts.bundle.js" | asset_url }}"></script>
+  <script defer type="module" src="{{ "react-apps.bundle.js" | asset_url }}"></script>
 </head>
 <body>
 

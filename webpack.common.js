@@ -3,20 +3,25 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const DIR_SRC = path.resolve(__dirname, 'src')
 const DIR_PROD = path.resolve(__dirname, 'assets')
 
+// TODO: Block compilation of styles.bundle.js
 module.exports = {
   entry: {
     scripts: `${DIR_SRC}/scripts/utils/index.ts`,
-    styles: `${DIR_SRC}/styles/index.ts`
+    'react-apps': `${DIR_SRC}/scripts/react-apps/react-cart/index.ts`,
+    styles: `${DIR_SRC}/styles/index.js`
   },
   module: {
     rules: [
       {
         test: /\.(ts|tsx)?$/,
-        use: 'ts-loader',
-        exclude: [
-          path.resolve(__dirname, 'node_modules'),
-          `${DIR_SRC}/styles/`
-        ],
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              configFile: 'tsconfig.json'
+            }
+          }
+        ]
       },
       {
         test: /\.scss$/,
