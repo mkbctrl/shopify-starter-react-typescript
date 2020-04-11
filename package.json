@@ -5,8 +5,8 @@
   "author": "Mikołaj Koropecki <mikolaj.koropecki@ragnarson.com>",
   "license": "MIT",
   "scripts": {
-    "compile:dev": "webpack --config webpack.dev.js --progress --color",
-    "compile:prod": "webpack --config webpack.prod.js --progress --color"
+    "dev": "webpack --config webpack.dev.js --progress --color",
+    "build": "webpack --config webpack.prod.js --progress --color"
   },
   "devDependencies": {
     "@types/node": "^13.11.1",

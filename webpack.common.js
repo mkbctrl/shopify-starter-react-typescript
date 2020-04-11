@@ -1,6 +1,6 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const DIR_SRC = path.resolve(__dirname, 'assets/src')
+const DIR_SRC = path.resolve(__dirname, 'src')
 const DIR_PROD = path.resolve(__dirname, 'assets')
 
 module.exports = {

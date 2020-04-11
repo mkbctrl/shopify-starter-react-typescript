@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./assets/src/scripts",
-    "outDir": "./assets/prod/scripts",
+    "rootDir": "./src/scripts",
+    "outDir": "./assets",
     "target": "es5",
     "module": "esnext",
     "noEmitOnError": true,
